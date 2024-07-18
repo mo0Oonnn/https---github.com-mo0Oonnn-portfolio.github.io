@@ -15,6 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 
 
 
@@ -26,14 +33,24 @@
 
     <nav>
         <div class="nav-links">
-            <a href="/portfolio.github.io">Обо мне</a>
-            <a href="/portfolio.github.io/my-projects">Проекты</a>
-            <a href="mailto:kegor6909@gmail.com">Почта</a>
+            <button id="ru" class="translate">RU</button>
+            <button id="en" class="translate">EN</button>
+        </div>
+
+        <div class="nav-links">
+            <a href="/portfolio.github.io" class="lang" key="about">Обо мне</a>
+            <a href="/portfolio.github.io/my-projects" class="lang" key="projects">Проекты</a>
+            <a href="mailto:kegor6909@gmail.com" class="lang" key="email">Почта</a>
         </div>
 
         <form action="https://github.com/mo0Oonnn">
-            <button><i class="ri-github-fill"></i> Мои проекты</button>
+            <button class="nav-github-button"><i class="ri-github-fill"></i>
+                <div class="lang" key="github-projects"> Мои
+                    проекты</div>
+            </button>
         </form>
+
+
     </nav>
 
 
@@ -45,7 +62,7 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">GRPC Auth Service</h5>
-                            <p class="card-text">GRPC сервис по авторизации</p>
+                            <p class="card-text lang" key="grpc">GRPC сервис авторизации</p>
                             <a href="https://github.com/mo0Oonnn/grpc-auth-service" class="card-link">Github
                                 Repository</a>
                         </div>
@@ -55,7 +72,7 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Bookings</h5>
-                            <p class="card-text">Веб-сайт для бронирования номера в отеле</p>
+                            <p class="card-text lang" key="website">Веб-сайт для бронирования номера в отеле</p>
                             <a href="https://github.com/mo0Oonnn/bookings" class="card-link">Github
                                 Repository</a>
                         </div>
@@ -65,7 +82,8 @@
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
                             <h5 class="card-title">Password generator</h5>
-                            <p class="card-text">Rest API, которое генерирует пароль по заданным требованиям</p>
+                            <p class="card-text lang" key="rest">Rest API, которое генерирует пароль по заданным
+                                требованиям</p>
                             <a href="https://github.com/mo0Oonnn/password-generator" class="card-link">Github
                                 Repository</a>
                         </div>
@@ -74,7 +92,10 @@
             </div>
             <form action="https://github.com/mo0Oonnn">
 
-                <button class="small-git"><i class="ri-github-fill"></i> Больше проектов</button>
+                <button class="small-git"><i class="ri-github-fill"></i>
+                    <div class="lang" key="more-projects">Больше
+                        проектов</div>
+                </button>
             </form>
         </div>
     </div>

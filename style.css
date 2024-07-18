@@ -49,7 +49,21 @@ nav .nav-links a:hover {
     font-size: 15px;
 }
 
-nav button {
+.translate {
+    font-size: 14px;
+    color: #606060;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    border: 0;
+    background-color: #fff;
+}
+
+.translate:hover {
+    color: #000;
+    font-size: 15px;
+}
+
+.nav-github-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +77,7 @@ nav button {
     transition: all 0.3s ease;
 }
 
-nav button:hover {
+.nav-github-button:hover {
     background: #fff;
     color: #000;
     border: 1px solid #cdcdcd;
@@ -184,7 +198,6 @@ nav button:hover {
 .about .about-me {
     display: flex;
     flex-direction: column;
-    gap: 100px;
     font-size: 35px;
     margin-bottom: 180px;
 }
